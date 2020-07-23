@@ -97,7 +97,7 @@
                                 {{ $entry->contenido }}
                             </div>
                             <div class="card-footer">
-                                Autor: {{ $entry->user->name }}
+                                Autor: <a href="{{ route('users.show', $entry->user_id) }}">{{ $entry->user->name }}</a>
                             </div>
                         </div>
                         @endforeach
